@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,7 @@
     <section class="fundo_verde">
         <div class="container flex_container">
             <div class="col">
-                <h2>Sobre Nós</h2>
+                <h2 class="type_fonte">Sobre Nós</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae dolore illum, corporis autem veniam ad voluptatum voluptates non perferendis, nam dolorum! Eligendi voluptatum numquam quae velit exercitationem ab nulla natus.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem neque quasi, ipsam similique quis eligendi at minus impedit quia deleniti vel nisi animi omnis, quam dolorem suscipit unde necessitatibus?</p>
             </div>
@@ -38,8 +38,8 @@
     <!--Seção Produtos-->
     <section id="produto">
         <div class="container">
-            <h2 class="texto_centralizado">Produtos</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam ipsam vel rem neque, fugit placeat provident in blanditiis aut cumque cupiditate autem, a esse, velit enim illo quis laudantium natus.</p>
+            <h2 class="texto_centralizado type_fonte"  >Produtos</h2>
+            <p class="texto_centralizado">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam ipsam vel rem neque, fugit placeat provident in blanditiis aut cumque cupiditate autem, a esse, velit enim illo quis laudantium natus.</p>
             
             <div class="flex_container">
                 <article class="produto">
@@ -72,6 +72,74 @@
                         <img src="img/patinha-preta.png" alt="Patinha Preta"> Comprar
                     </a>
                 </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="fundo_verde">
+        <div class="container flex_container">
+            <div class="col">
+                <h3 class="type_fonte">Serviços</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum, quam eveniet officiis optio labore exercitationem quo ab nisi et accusamus maiores eaque ipsa rerum odio in minima placeat sit.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam veritatis debitis nesciunt, vel molestiae deserunt ullam dolorum perspiciatis impedit inventore optio doloribus iure iste consequuntur magni eveniet nostrum minus.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est enim eum omnis! Distinctio cum, velit blanditiis veniam libero molestiae. Ex sint vitae labore eaque odio amet officiis aspernatur? Qui?
+                </p>
+            </div>
+
+            <div class="col">
+                <img src="img/img-galeria-1.jpg" alt="foto pet 1">
+                <img src="img/img-galeria-2.jpg" alt="foto pet 2">
+                <img src="img/img-galeria-3.jpg" alt="foto pet 3">
+                <img src="img/img-galeria-4.jpg" alt="foto pet 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <div class="texto_centralizado">
+                <h2 class="type_fonte">Contato</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, neque dicta ipsam unde illo, necessitatibus dolorum, provident debitis nemo error nulla? Libero explicabo distinctio neque, aliquid totam harum amet accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sint velit? Enim aut laboriosam provident aspernatur placeat possimus labore qui, dignissimos ipsam sunt quos officia voluptate! Cupiditate veniam in repudiandae!</p>
+            </div>
+            <div class="flex_container">
+                <div class="col">
+                    <form action="">
+                        <label for="cname">
+                            <strong>Nome</strong>
+                            <input type="text" id="cname" placeholder="Insira o seu nome Completo">
+                        </label>
+
+                        <label for="cemail">
+                            <strong>E-Mail</strong>
+                            <input type="email" name="cemail" id="cemail" placeholder="exemplo@teste.com.br">
+                        </label>
+
+                        <label for="cfone">
+                            <strong>Telefone</strong>
+                            <input type="number" placeholder="(11)00000-0000">
+                        </label>
+
+                        <label for="cass">
+                            <strong>Assunto</strong>
+                            <input type="text" id="cass" placeholder="Insira o assunto da mensagem">
+                        </label>
+
+                        <label for="cmsg">
+                            <strong>Mensagem</strong>
+                            <textarea  id="cmsg"  rows="10" placeholder="Insira aqui sua mensagem">
+
+                            </textarea>
+                        </label>
+
+                        <div class="btn_pata">
+                            <button>
+                                <img src="img/patinha-preta.png" alt=""> Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col"></div>
             </div>
         </div>
     </section>
