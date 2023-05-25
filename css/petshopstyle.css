@@ -139,3 +139,23 @@ iframe{
     margin-top: 43px;
 
  }
+
+ #fixed {
+    margin-top: 10px;
+ }
+ 
+ .border {
+    border-top: 4px solid #91e467;
+ }
+
+ .img_config{
+    width: 37px;
+    height: 37px;
+    margin-top: 20px;
+
+ }
+
+ #fix_text_map {
+    font-family: sans-serif; 
+    font-size: 15px;
+ }
