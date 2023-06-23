@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -130,32 +131,141 @@ iframe{
     width: 100%;
 }
 
- h2 {
+h2 {
     text-transform: uppercase;
     margin-bottom: 15px;
- }
+}
 
- #produto .flex_container, #contato .flex_container{
+#produto .flex_container, #contato .flex_container{
     margin-top: 43px;
 
- }
+}
 
- #fixed {
+#fixed {
     margin-top: 10px;
- }
+}
  
- .border {
+.border {
     border-top: 4px solid #91e467;
- }
+}
 
- .img_config{
+.img_config{
     width: 37px;
     height: 37px;
     margin-top: 20px;
+}
 
- }
-
- #fix_text_map {
+#fix_text_map {
     font-family: sans-serif; 
     font-size: 15px;
- }
+}
+
+.container2{
+    width: 500px;
+
+}
+ 
+#hamburger {
+    display: none;
+}
+
+@media (max-width: 580px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu_ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav li{
+        background-image: none;
+        background-color: black;
+        width: 100%;
+
+    }
+
+
+    nav li a {
+        display: block;
+        width: 100%;
+        color: white;
+    }
+
+    nav {
+        padding: 0;
+    }
+
+    #hamburger {
+        display: block;
+        background-color: #6dd432;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+
+    }
+
+    .ham , #items{
+        width: 100%;
+
+    }
+
+    #items{
+        display: none;
+        cursor: pointer;
+    }
+
+    .container{
+        width: 90vw;
+        
+    }
+
+    .flex_container {
+        flex-direction: column;
+    }
+
+    #art {
+        gap: 30px;
+    }
+
+
+    .flex_container .col {
+        width: 100%;
+    }
+
+    .col,img {
+        text-align: center;
+    }
+
+    .produto {
+        text-align: center;
+        width: 100%;
+    }
+    
+
+    .produto figure {
+        border-radius: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+
+
+}

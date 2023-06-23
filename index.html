@@ -13,20 +13,27 @@
         <h1 title="Mary & Gabi PetShop"><img src="img/logo-mari-e-gabi-petshop.svg" alt="logo"></h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#" class="type_fonte">Sobre</a></li>
-            <li><a href="#" class="type_fonte">Produtos</a></li>
-            <li><a href="#" class="type_fonte">Serviços</a></li>
-            <li id="itemcontato" class="type_fonte"><a href="#">Contatos</a></li>
-            <!--ul>li>a-->
-        </ul>
+
+    
+    <nav id="nav-menu" > 
+        <div class="ham">
+            <i id="hamburger" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+        </div>
+        <div id="items">   
+            <ul id="menu_ul">
+                <li><a href="#Sobre" class="type_fonte">Sobre</a></li>
+                <li><a href="#produto" class="type_fonte">Produtos</a></li>
+                <li><a href="#Serviços" class="type_fonte">Serviços</a></li>
+                <li class="type_fonte"><a href="#contato">Contatos</a></li>
+                <!--ul>li>a-->
+            </ul>
+        </div>
     </nav>
     
     <section class="fundo_verde">
         <div class="container flex_container">
             <div class="col">
-                <h2 class="type_fonte">Sobre Nós</h2>
+                <h2 class="type_fonte" id="sobre">Sobre Nós</h2>
                 <p class="type_fonte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae dolore illum, corporis autem veniam ad voluptatum voluptates non perferendis, nam dolorum! Eligendi voluptatum numquam quae velit exercitationem ab nulla natus.</p>
                 <p class="type_fonte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quidem neque quasi, ipsam similique quis eligendi at minus impedit quia deleniti vel nisi animi omnis, quam dolorem suscipit unde necessitatibus?</p>
             </div>
@@ -42,7 +49,7 @@
             <h2 class="texto_centralizado type_fonte"  >Produtos</h2>
             <p class="texto_centralizado type_fonte">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam ipsam vel rem neque, fugit placeat provident in blanditiis aut cumque cupiditate autem, a esse, velit enim illo quis laudantium natus.</p>
             
-            <div class="flex_container">
+            <div class="flex_container" id="art">
                 <article class="produto">
                     <figure>
                         <img src="img/produto-1.jpg" alt="Produto">
@@ -80,14 +87,15 @@
     <section class="fundo_verde">
         <div class="container flex_container">
             <div class="col">
-                <h2 class="type_fonte">Serviços</h2>
-                <p class="type_fonte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum, quam eveniet officiis optio labore exercitationem quo ab nisi et accusamus maiores eaque ipsa rerum odio in minima placeat sit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam veritatis debitis nesciunt, vel molestiae deserunt ullam dolorum perspiciatis impedit inventore optio doloribus iure iste consequuntur magni eveniet nostrum minus.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse est enim eum omnis! Distinctio cum, velit blanditiis veniam libero molestiae. Ex sint vitae labore eaque odio amet officiis aspernatur? Qui?
+                <h2 class="type_fonte texto_centralizado" id="Serviços">Serviços</h2>
+                <p class="type_fonte texto_centralizado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum, quam eveniet officiis optio labore exercitationem quo ab nisi et accusamus maiores eaque ipsa rerum odio in minima placeat sit.
+                </p>
+                <p class="type_fonte texto_centralizado">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, numquam veritatis debitis nesciunt, vel molestiae deserunt ullam dolorum perspiciatis impedit inventore optio doloribus iure iste consequuntur magni eveniet nostrum minus.
                 </p>
             </div>
 
-            <div class="col">
+            <div class="col" id>
                 <img src="img/img-galeria-1.jpg" alt="foto pet 1">
                 <img src="img/img-galeria-2.jpg" alt="foto pet 2">
                 <img src="img/img-galeria-3.jpg" alt="foto pet 3">
@@ -97,12 +105,13 @@
     </section>
 
     <section id="contato">
-        <div class="container">
+        <div class="container texto_centralizado">
             <div class="texto_centralizado">
-                <h2 class="type_fonte">Contato</h2>
+                <h2 class="type_fonte" id="contato">Contato</h2>
                 <p class="type_fonte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, neque dicta ipsam unde illo, necessitatibus dolorum, provident debitis nemo error nulla? Libero explicabo distinctio neque, aliquid totam harum amet accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, sint velit? Enim aut laboriosam provident aspernatur placeat possimus labore qui, dignissimos ipsam sunt quos officia voluptate! Cupiditate veniam in repudiandae!</p>
             </div>
-            <div class="flex_container">
+
+            <div class="flex_container ">
                 <div class="col">
                     <form action="">
                         <label for="cname">
@@ -166,5 +175,18 @@
         </div>
 
     </footer>
+    <script src="https://kit.fontawesome.com/baa23d12a5.js" crossorigin="anonymous"></script>
+
+    <script>
+        function clickMenu(){
+            if (items.style.display == 'block'){
+                items.style.display = 'none'
+            } else {
+                items.style.display = 'block'
+
+                    
+            }
+        }
+    </script>
 </body>
 </html>
